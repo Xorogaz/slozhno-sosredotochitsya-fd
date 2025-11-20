@@ -179,6 +179,10 @@
   .answer_column {
     grid-column: 1;
   }
+
+  .under_question {
+    margin-bottom: 10px;
+  }
 }
 
 @container (768px <= inline-size < 1024px) {
@@ -209,6 +213,10 @@
   .answer_row {
     grid-column: 1/4;
   }
+
+  .under_question {
+    margin-bottom: 20px;
+  }
 }
 
 @container (inline-size >= 1024px) {
@@ -232,6 +240,10 @@
 
   .answer_row {
     grid-row: 2;
+  }
+
+  .under_question {
+    margin-bottom: 20px;
   }
 }
 
