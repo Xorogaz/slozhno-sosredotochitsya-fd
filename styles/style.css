@@ -1,5 +1,173 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  background-color: var(--background-color-change);
+  background-image: var(--background-picture);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  container-type: inline-size;
+}
+
+.rec::before {
+  content: 'REC';
+  position: absolute;
+  display: var(--rec-visibility);
+  color: var(--accent-color);
+}
+
+.rec_dot::before{
+  content: ' ';
+  position: absolute;
+  display: var(--rec-visibility);
+  border: 5px solid var(--accent-color);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 2px var(--accent-color);
+  -moz-box-shadow: 0px 0px 5px 2px var(--accent-color);
+  box-shadow: 0px 0px 5px 2px var(--accent-color);
+}
+
+.rec_border_top {
+  content: ' ';
+  position: fixed;
+  border-top: 1px solid var(--top-and-question-color);
+  border-right: 1px solid var(--top-and-question-color);
+  height: 25px;
+  width: 25px;
+}
+
+.rec_border_bottom {
+  content: ' ';
+  position: fixed;
+  border-left: 1px solid var(--top-and-question-color);
+  border-bottom: 1px solid var(--top-and-question-color);
+  height: 25px;
+  width: 25px;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__theme-menu {
+  display: flex;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  gap: 9px;
+}
+
+.header__theme-menu-button{
+  padding: 0 12.5px 3px 12.5px;
+  height: 26px;
+  cursor: pointer;
+  color: var(--top-and-question-color);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button_active{
+  border: 1px solid var(--top-and-question-color);
+}
+
+.title{
+  color: var(--title-color);
+  font-weight: bold;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.theme-decor {
+  color: var(--theme-color);
+  background-color: var(--accent-color);
+  color: #000028;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+.question {
+  color: var(--top-and-question-color);
+  font-weight: bold;
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 18px;
+}
+
+.answer_column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer_row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer_text {
+  color: var(--text-color);
+  line-height: 1.302em;
+}
+
+.theme_mini{
+  font-weight: 400;
+}
+
+.images {
+  display: grid;
+}
+
+.images img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.images img:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.images img:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.images img:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.images img:nth-child(5) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.footer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.title_footer {
+  margin: auto;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
