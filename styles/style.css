@@ -82,7 +82,6 @@
 .theme-decor {
   color: var(--theme-color);
   background-color: var(--accent-color);
-  color: #000028;
   font-weight: bold;
   font-size: 18px;
 }
