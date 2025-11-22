@@ -4,6 +4,19 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --rec-visibility: none;
+    --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
+    --background-picture: url(../images/cover-image-light.png);
+    --background-color-change: #F5F5F5;
+    --theme-color: #353430;
+    --top-and-question-color: #353430;
+    --text-color: #353430;
+  } 
+}
+
 :root.theme-light {
   --rec-visibility: none;
   --accent-color: #FF8DCB;
